@@ -62,6 +62,8 @@ namespace WebAPI
 
             app.UseRouting();
 
+            app.UseStaticFiles();//yeni eklendi
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

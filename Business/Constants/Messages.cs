@@ -40,5 +40,9 @@ namespace Business.Constants
         public static string DeletedCar = "Araba başarıyla silindi.";
         public static string UpdatedCar = "Araba başarıyla güncellendi.";
         public static string FailedCarAddOrUpdate = "Lütfen günlük fiyat kısmını 0'dan büyük giriniz.";
+
+        public static string AddedCarImage = "Araba resmi eklendi";
+        public static string DeletedCarImage = "Araba resmi silindi";
+        public static string FailedCarImageAdd = "Araba resmi eklenirken hata meydana geldi";
     }
 }
