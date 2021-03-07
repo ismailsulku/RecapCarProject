@@ -50,7 +50,7 @@ namespace ConsoleUI
             Console.WriteLine("Müşterilerin Listesi: \nId\tKullanıcı Id\tCustomer Name");
             foreach (var customer in customerManager.GetAll().Data)
             {
-                Console.WriteLine($"{customer.CustomerId}\t{customer.UserId}\t{customer.CustomerName}");
+                Console.WriteLine($"{customer.Id}\t{customer.Id}\t{customer.CustomerName}");
             }
         }
 
