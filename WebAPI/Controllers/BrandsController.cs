@@ -42,6 +42,16 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
+        [HttpGet("get-by-id")]
+        public IActionResult GetById(int id)
+        {
+            var result = _brandService.GetById(id);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
+        }
 
         [HttpPost("update")]
         public IActionResult Update(Brand brand)
@@ -67,15 +77,15 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
-        public IActionResult GetById(int id)
+        [HttpGet("get-by-id")]
+        public IActionResult GetByBrandId(int id)
         {
             var result = _brandService.GetById(id);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
     }
 }

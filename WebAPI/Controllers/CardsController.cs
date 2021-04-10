@@ -31,7 +31,7 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
 
-        [HttpGet("getbycustomerid")]
+        [HttpGet("get-by-customerid")]
         public IActionResult GetByCustomerId(int customerId)
         {
             var result = _cardService.GetByCustomerId(customerId);
@@ -41,6 +41,8 @@ namespace WebAPI.Controllers
 
             return Ok(result);
         }
+
+
 
         [HttpPost("add")]
         public IActionResult Add(Card card)

@@ -10,5 +10,6 @@ namespace Entities.Concrete
         public int Id { get; set; }
         public int UserId { get; set; }
         public string CustomerName { get; set; }
+        public string Email { get; set; }
     }
 }

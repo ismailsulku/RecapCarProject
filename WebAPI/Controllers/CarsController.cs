@@ -75,7 +75,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
+        [HttpGet("get-by-id")]
         public IActionResult GetById(int id)
         {
             var result = _carService.GetById(id);
@@ -88,7 +88,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getallcardetails")]
+        [HttpGet("get-details")]
         public IActionResult GetAllCarDetails()
         {
             Thread.Sleep(2000);

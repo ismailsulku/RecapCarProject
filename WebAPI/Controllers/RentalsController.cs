@@ -69,7 +69,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
+        [HttpGet("get-by-id")]
         public IActionResult GetById(int id)
         {
             var result = _rentalService.GetById(id);
@@ -93,7 +93,7 @@ namespace WebAPI.Controllers
         }
 
 
-        [HttpGet("getrentalbycar")]
+        [HttpGet("get-rental-by-carid")]
         public IActionResult GetCarByColor(int id)
         {
 

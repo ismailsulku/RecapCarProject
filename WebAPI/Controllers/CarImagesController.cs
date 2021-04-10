@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        [HttpGet("getbyid")]
+        [HttpGet("get-by-id")]
         public IActionResult GetById(int id)
         {
             var result = _carImageService.GetById(id);
@@ -40,7 +40,7 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        [HttpGet("getallbycarid")]
+        [HttpGet("get-list-by-carid")]
         public IActionResult GetAllByCarId(int carId)
         {
             var result = _carImageService.GetAllByCarId(carId);

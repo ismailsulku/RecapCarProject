@@ -69,7 +69,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
+        [HttpGet("get-by-id")]
         public IActionResult GetById(int id)
         {
             var result = _userService.GetById(id);
